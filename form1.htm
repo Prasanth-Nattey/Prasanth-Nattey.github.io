@@ -1,0 +1,45 @@
+<html>
+<head>
+
+
+<div class="container">  
+<script LANGUAGE="JavaScript" type="text/javascript">
+function submit() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=600,height=600')
+  message = "<ul><li><b>Firstirst Name: </b>" + document.form1.First Name.value;
+  message += "<li><b>Last Name: </b>" + document.form1.last name.value;
+  message += "<li><b>email: </b>" + document.form1.phone.value + "</ul>";
+  DispWin.document.write(message);
+}
+</script>
+</head>
+ <link href="form.css" rel="stylesheet" type="text/css" />
+  <form name="form1" id="contact" action="" method="post">
+    <h3>Contact Form</h3>
+    <h4>Please fill this form to stay in touch with me</h4>
+    <fieldset>
+      <input placeholder="First Name" type="text" tabindex="1" NAME="First Name" required autofocus>
+    </fieldset>
+	<fieldset>
+      <input placeholder="Last Name" type="text" tabindex="2" required autofocus>
+    </fieldset>
+	<fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Password" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Date of Birth" type="text" tabindex="5" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="6" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" value="display" onClick="submit(); ">Submit</button>
+    </fieldset>
+
+  </form>  
+</div>
+
+</html>
